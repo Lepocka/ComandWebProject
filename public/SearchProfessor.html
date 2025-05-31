@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пошук викладача</title>
+  <link rel="stylesheet" href="/src/styles/SearchProfessor.css">
+</head>
+<body>
+  <!-- Верхня частина з навігацією -->
+  <header>
+    <h1>Кафедра автоматизованих систем управління</h1>
+    <nav>
+      <ul>
+        <li><a href="AboutUs.html">Головна</a></li>
+        <li><a href="SearchProfessor.html" class="active">Пошук викладача</a></li>
+        <li><a href="SearchSchedule.html">Пошук розкладу</a></li>
+        <li><a href="DiplomaRegistration.html">Запис</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Основний вміст сторінки -->
+  <main>
+     <!-- Контейнер для розташування блоків у ряд -->
+    <div class="content-container">
+      <!-- Лівий блок: Пошук викладача та результат -->
+      <div class="search-lecturer-block">
+        <section class="search-teacher">
+          <h2>Пошук викладача</h2>
+          <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Введіть ім'я викладача" required>
+            <button type="submit">Пошук</button>
+          </form>
+        </section>
+
+        <div class="lecturer-result">
+          <!-- Заголовок з ім'ям викладача -->
+          <h2>Шпак Зореслава Ярославівна</h2>
+          
+          <!-- Опис кваліфікації -->
+          <p class="qualification">
+            Кандидат технічних наук, доцент кафедри автоматизованих систем управління, 
+            Інституту комп’ютерних наук та інформаційних технологій, 
+            Національного університету «Львівська політехніка».
+          </p>
+          
+          <!-- Список курсів -->
+          <div class="courses">
+            <h3>Курси, які викладає:</h3>
+            <ul>
+              <li>Алгоритмізація та програмування</li>
+              <li>Основи інформаційних технологій</li>
+              <li>Проблемно-орієнтоване програмування</li>
+            </ul>
+          </div>
+          
+          <!-- Посилання на статтю або додаткову інформацію -->
+          <p class="article-link">
+            <a href="#">Посилання на статтю</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Правий блок: Новини кафедри -->
+      <section class="department-news">
+        <h2>Новини кафедри</h2>
+        <ul>
+          <li>Новина 1</li>
+          <li>Новина 2</li>
+          <li>Новина 3</li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+  <div class="footer-container">
+    <div class="footer-block">
+      <h3>Контактна інформація</h3>
+      <p>
+        Вул. С. Бандери 28а, 5-й н.к., кім. 801<br>
+        Львів, Україна
+      </p>
+    </div>
+    <div class="footer-block">
+      <h3>Зв'язок</h3>
+      <p>
+        E-mail: <a href="mailto:asu.dept@lpnu.ua" style="color: inherit;">asu.dept@lpnu.ua</a><br>
+        Телефон: (032) 258-26-47
+      </p>
+    </div>
+    <div class="footer-block">
+      <h3>Соцмережі</h3>
+      <p>
+        <a href="#" style="color: inherit;">Facebook</a> | <a href="#" style="color: inherit;">Twitter</a>
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
